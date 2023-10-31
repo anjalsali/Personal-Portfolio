@@ -27,14 +27,14 @@ li {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 1rem 5rem;
+   padding: 0.5rem 5rem;
 }
 
 .header-name {
-   font-size: 1.8rem;
+   font-size: 2rem;
    text-transform: uppercase;
-   font-weight: 700;
-   letter-spacing: 1px;
+   font-weight: bolder;
+   letter-spacing: 5px;
 }
 
 .nav-content {
@@ -42,7 +42,7 @@ li {
 }
 
 .nav-items {
-   padding: 0.5rem 2.5rem;
+   padding: 1rem 2.5rem;
    display: inline-block;
    font-size: 1rem;
    color: #333;
@@ -52,5 +52,59 @@ li {
    transition: color 0.3s;
 }
 .nav-items:hover {
-   color: #7843e9;
+   color: #01ddebe9;
+}
+
+.hero-banner {
+   background: url(../images/hero-banner.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   width: 100vmax;
+   min-width: 60%;
+   max-height: 100rem;
+   position: relative;
+}
+
+.intro-text {
+   display: block;
+   position: absolute;
+   top: 25%;
+   left: 10%;
+   text-align: left;
+}
+
+.hero-banner h2 {
+   color: #ffffff;
+   font-family: "Open Sans", sans-serif;
+   font-size: 75px;
+   line-height: 80px;
+   font-style: normal;
+   font-weight: 700;
+   letter-spacing: -3px;
+   text-transform: none;
+}
+
+.page-section {
+   margin: 2.5% 5%;
+   display: grid;
+   min-height: 500px;
+   height: 70vh;
+   grid-template-columns: 25% 75%;
+   grid-template-areas: "featuredArea featuredContent";
+}
+
+.featuredArea {
+   grid-area: featuredArea;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   padding: 5%;
+   text-align: right;
+   font-size: 3rem;
+   border-right: 8px solid #01ddebe9;
+}
+
+.featuredContent {
+   grid-area: featuredContent;
 }
