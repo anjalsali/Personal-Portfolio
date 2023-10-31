@@ -18,11 +18,14 @@ li {
    position: fixed;
    width: 100%;
    z-index: 1000;
-   background: #000;
    background: #fff;
+   color: #1d1c1c;
    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
-
+body {
+   background: #1d1c1c;
+   color: #ffffff;
+}
 .header-content {
    display: flex;
    align-items: center;
@@ -106,7 +109,6 @@ li {
    display: grid;
    grid-template-columns: 50% 50%;
    grid-gap: 5rem;
-   grid-template-areas: "aboutPara aboutSkills";
    padding: 5%;
 }
 
@@ -137,4 +139,59 @@ li {
    border-radius: 5px;
    font-weight: 600;
    color: #666;
+}
+
+#project-grid {
+   margin: 0px 5%;
+   display: grid;
+   grid-template-rows: 200px 200px 250px 250px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:
+      "portfolio portfolio"
+      "portfolio portfolio"
+      "horiseon netflix"
+      "youtube facebook";
+}
+
+#portfolio {
+   grid-area: portfolio;
+   background-image: url("../images/portfolio-image.png");
+}
+#horiseon {
+   grid-area: horiseon;
+   background-image: url("../images/horiseon-website-image.png");
+}
+
+#netflix {
+   grid-area: netflix;
+   background-image: url("../images/Netflix.jpg");
+}
+
+#youtube {
+   grid-area: youtube;
+   background-image: url("../images/youtube.jpg");
+}
+
+#facebook {
+   grid-area: facebook;
+   background-image: url("../images/facebook.jpg");
+}
+
+.project-grid-area {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 10px;
+   cursor: pointer;
+   display: grid;
+   align-content: end;
+}
+
+.heading {
+   background-color: #01ddebe9;
+   padding: 15px;
+   height: 25px;
+   color: white;
+   font-size: 18px;
+   border-bottom: 5px solid #ff6200;
 }
