@@ -1,3 +1,4 @@
+/* general styling for the webpage */
 * {
    margin: 0;
    padding: 0;
@@ -14,6 +15,14 @@ li {
    list-style: none;
 }
 
+body {
+   background: #1d1c1c;
+   color: #ffffff;
+   display: flex;
+   flex-direction: column;
+}
+
+/* styling for header and navigation */
 .header {
    position: fixed;
    width: 100%;
@@ -22,12 +31,7 @@ li {
    color: #1d1c1c;
    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
-body {
-   background: #1d1c1c;
-   color: #ffffff;
-   display: flex;
-   flex-direction: column;
-}
+
 .header-content {
    display: flex;
    align-items: center;
@@ -60,6 +64,7 @@ body {
    color: #01ddebe9;
 }
 
+/* styling for hero banner and intorduction title */
 .hero-banner {
    background: url(../images/hero-banner.jpg);
    background-position: center;
@@ -90,6 +95,7 @@ body {
    text-transform: none;
 }
 
+/* styling for about me and projects section */
 .page-section {
    margin: 2.5% 5%;
    display: grid;
@@ -211,6 +217,7 @@ body {
    border-bottom: 1rem solid #9b9696;
 }
 
+/* Styling for footer */
 .footer {
    position: relative;
    width: 100vmax;
@@ -238,6 +245,8 @@ body {
    justify-content: center;
    padding-bottom: 2rem;
 }
+
+/* Styling for social media icons */
 .socialicons .icon {
    width: 50px;
    height: 50px;
@@ -270,6 +279,7 @@ a:hover::after {
    bottom: 0;
 }
 
+/* styling for basic media queries */
 @media only screen and (max-width: 1000px) {
    #navigation {
       display: none;
